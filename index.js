@@ -32,10 +32,10 @@ switch (platform) {
   case 'android':
     switch (arch) {
       case 'arm64':
-        localFileExisted = existsSync(join(__dirname, '.android-arm64.node'))
+        localFileExisted = existsSync(join(__dirname, 'FSRS.android-arm64.node'))
         try {
           if (localFileExisted) {
-            nativeBinding = require('./.android-arm64.node')
+            nativeBinding = require('./FSRS.android-arm64.node')
           } else {
             nativeBinding = require('rs-fsrs-nodejs-android-arm64')
           }
@@ -44,10 +44,10 @@ switch (platform) {
         }
         break
       case 'arm':
-        localFileExisted = existsSync(join(__dirname, '.android-arm-eabi.node'))
+        localFileExisted = existsSync(join(__dirname, 'FSRS.android-arm-eabi.node'))
         try {
           if (localFileExisted) {
-            nativeBinding = require('./.android-arm-eabi.node')
+            nativeBinding = require('./FSRS.android-arm-eabi.node')
           } else {
             nativeBinding = require('rs-fsrs-nodejs-android-arm-eabi')
           }
@@ -67,7 +67,7 @@ switch (platform) {
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./.win32-x64-msvc.node')
+            nativeBinding = require('./FSRS.win32-x64-msvc.node')
           } else {
             nativeBinding = require('rs-fsrs-nodejs-win32-x64-msvc')
           }
@@ -77,11 +77,11 @@ switch (platform) {
         break
       case 'ia32':
         localFileExisted = existsSync(
-          join(__dirname, '.win32-ia32-msvc.node')
+          join(__dirname, 'FSRS.win32-ia32-msvc.node')
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./.win32-ia32-msvc.node')
+            nativeBinding = require('./FSRS.win32-ia32-msvc.node')
           } else {
             nativeBinding = require('rs-fsrs-nodejs-win32-ia32-msvc')
           }
@@ -91,11 +91,11 @@ switch (platform) {
         break
       case 'arm64':
         localFileExisted = existsSync(
-          join(__dirname, '.win32-arm64-msvc.node')
+          join(__dirname, 'FSRS.win32-arm64-msvc.node')
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./.win32-arm64-msvc.node')
+            nativeBinding = require('./FSRS.win32-arm64-msvc.node')
           } else {
             nativeBinding = require('rs-fsrs-nodejs-win32-arm64-msvc')
           }
@@ -108,10 +108,10 @@ switch (platform) {
     }
     break
   case 'darwin':
-    localFileExisted = existsSync(join(__dirname, '.darwin-universal.node'))
+    localFileExisted = existsSync(join(__dirname, 'FSRS.darwin-universal.node'))
     try {
       if (localFileExisted) {
-        nativeBinding = require('./.darwin-universal.node')
+        nativeBinding = require('./FSRS.darwin-universal.node')
       } else {
         nativeBinding = require('rs-fsrs-nodejs-darwin-universal')
       }
@@ -119,10 +119,10 @@ switch (platform) {
     } catch {}
     switch (arch) {
       case 'x64':
-        localFileExisted = existsSync(join(__dirname, '.darwin-x64.node'))
+        localFileExisted = existsSync(join(__dirname, 'FSRS.darwin-x64.node'))
         try {
           if (localFileExisted) {
-            nativeBinding = require('./.darwin-x64.node')
+            nativeBinding = require('./FSRS.darwin-x64.node')
           } else {
             nativeBinding = require('rs-fsrs-nodejs-darwin-x64')
           }
@@ -132,11 +132,11 @@ switch (platform) {
         break
       case 'arm64':
         localFileExisted = existsSync(
-          join(__dirname, '.darwin-arm64.node')
+          join(__dirname, 'FSRS.darwin-arm64.node')
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./.darwin-arm64.node')
+            nativeBinding = require('./FSRS.darwin-arm64.node')
           } else {
             nativeBinding = require('rs-fsrs-nodejs-darwin-arm64')
           }
@@ -152,10 +152,10 @@ switch (platform) {
     if (arch !== 'x64') {
       throw new Error(`Unsupported architecture on FreeBSD: ${arch}`)
     }
-    localFileExisted = existsSync(join(__dirname, '.freebsd-x64.node'))
+    localFileExisted = existsSync(join(__dirname, 'FSRS.freebsd-x64.node'))
     try {
       if (localFileExisted) {
-        nativeBinding = require('./.freebsd-x64.node')
+        nativeBinding = require('./FSRS.freebsd-x64.node')
       } else {
         nativeBinding = require('rs-fsrs-nodejs-freebsd-x64')
       }
@@ -168,11 +168,11 @@ switch (platform) {
       case 'x64':
         if (isMusl()) {
           localFileExisted = existsSync(
-            join(__dirname, '.linux-x64-musl.node')
+            join(__dirname, 'FSRS.linux-x64-musl.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./.linux-x64-musl.node')
+              nativeBinding = require('./FSRS.linux-x64-musl.node')
             } else {
               nativeBinding = require('rs-fsrs-nodejs-linux-x64-musl')
             }
@@ -181,11 +181,11 @@ switch (platform) {
           }
         } else {
           localFileExisted = existsSync(
-            join(__dirname, '.linux-x64-gnu.node')
+            join(__dirname, 'FSRS.linux-x64-gnu.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./.linux-x64-gnu.node')
+              nativeBinding = require('./FSRS.linux-x64-gnu.node')
             } else {
               nativeBinding = require('rs-fsrs-nodejs-linux-x64-gnu')
             }
@@ -197,11 +197,11 @@ switch (platform) {
       case 'arm64':
         if (isMusl()) {
           localFileExisted = existsSync(
-            join(__dirname, '.linux-arm64-musl.node')
+            join(__dirname, 'FSRS.linux-arm64-musl.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./.linux-arm64-musl.node')
+              nativeBinding = require('./FSRS.linux-arm64-musl.node')
             } else {
               nativeBinding = require('rs-fsrs-nodejs-linux-arm64-musl')
             }
@@ -210,11 +210,11 @@ switch (platform) {
           }
         } else {
           localFileExisted = existsSync(
-            join(__dirname, '.linux-arm64-gnu.node')
+            join(__dirname, 'FSRS.linux-arm64-gnu.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./.linux-arm64-gnu.node')
+              nativeBinding = require('./FSRS.linux-arm64-gnu.node')
             } else {
               nativeBinding = require('rs-fsrs-nodejs-linux-arm64-gnu')
             }
@@ -226,11 +226,11 @@ switch (platform) {
       case 'arm':
         if (isMusl()) {
           localFileExisted = existsSync(
-            join(__dirname, '.linux-arm-musleabihf.node')
+            join(__dirname, 'FSRS.linux-arm-musleabihf.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./.linux-arm-musleabihf.node')
+              nativeBinding = require('./FSRS.linux-arm-musleabihf.node')
             } else {
               nativeBinding = require('rs-fsrs-nodejs-linux-arm-musleabihf')
             }
@@ -239,11 +239,11 @@ switch (platform) {
           }
         } else {
           localFileExisted = existsSync(
-            join(__dirname, '.linux-arm-gnueabihf.node')
+            join(__dirname, 'FSRS.linux-arm-gnueabihf.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./.linux-arm-gnueabihf.node')
+              nativeBinding = require('./FSRS.linux-arm-gnueabihf.node')
             } else {
               nativeBinding = require('rs-fsrs-nodejs-linux-arm-gnueabihf')
             }
@@ -255,11 +255,11 @@ switch (platform) {
       case 'riscv64':
         if (isMusl()) {
           localFileExisted = existsSync(
-            join(__dirname, '.linux-riscv64-musl.node')
+            join(__dirname, 'FSRS.linux-riscv64-musl.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./.linux-riscv64-musl.node')
+              nativeBinding = require('./FSRS.linux-riscv64-musl.node')
             } else {
               nativeBinding = require('rs-fsrs-nodejs-linux-riscv64-musl')
             }
@@ -268,11 +268,11 @@ switch (platform) {
           }
         } else {
           localFileExisted = existsSync(
-            join(__dirname, '.linux-riscv64-gnu.node')
+            join(__dirname, 'FSRS.linux-riscv64-gnu.node')
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./.linux-riscv64-gnu.node')
+              nativeBinding = require('./FSRS.linux-riscv64-gnu.node')
             } else {
               nativeBinding = require('rs-fsrs-nodejs-linux-riscv64-gnu')
             }
@@ -283,11 +283,11 @@ switch (platform) {
         break
       case 's390x':
         localFileExisted = existsSync(
-          join(__dirname, '.linux-s390x-gnu.node')
+          join(__dirname, 'FSRS.linux-s390x-gnu.node')
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./.linux-s390x-gnu.node')
+            nativeBinding = require('./FSRS.linux-s390x-gnu.node')
           } else {
             nativeBinding = require('rs-fsrs-nodejs-linux-s390x-gnu')
           }
