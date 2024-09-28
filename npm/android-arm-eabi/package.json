@@ -7,9 +7,9 @@
   "cpu": [
     "arm"
   ],
-  "main": ".android-arm-eabi.node",
+  "main": "FSRS.android-arm-eabi.node",
   "files": [
-    ".android-arm-eabi.node"
+    "FSRS.android-arm-eabi.node"
   ],
   "description": "nodejs binding",
   "keywords": [

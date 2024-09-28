@@ -7,9 +7,9 @@
   "cpu": [
     "arm64"
   ],
-  "main": ".android-arm64.node",
+  "main": "FSRS.android-arm64.node",
   "files": [
-    ".android-arm64.node"
+    "FSRS.android-arm64.node"
   ],
   "description": "nodejs binding",
   "keywords": [

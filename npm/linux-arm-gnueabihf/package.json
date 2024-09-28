@@ -7,9 +7,9 @@
   "cpu": [
     "arm"
   ],
-  "main": ".linux-arm-gnueabihf.node",
+  "main": "FSRS.linux-arm-gnueabihf.node",
   "files": [
-    ".linux-arm-gnueabihf.node"
+    "FSRS.linux-arm-gnueabihf.node"
   ],
   "description": "nodejs binding",
   "keywords": [

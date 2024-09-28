@@ -7,9 +7,9 @@
   "cpu": [
     "arm64"
   ],
-  "main": ".win32-arm64-msvc.node",
+  "main": "FSRS.win32-arm64-msvc.node",
   "files": [
-    ".win32-arm64-msvc.node"
+    "FSRS.win32-arm64-msvc.node"
   ],
   "description": "nodejs binding",
   "keywords": [

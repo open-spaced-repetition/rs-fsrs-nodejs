@@ -7,9 +7,9 @@
   "cpu": [
     "arm64"
   ],
-  "main": ".darwin-arm64.node",
+  "main": "FSRS.darwin-arm64.node",
   "files": [
-    ".darwin-arm64.node"
+    "FSRS.darwin-arm64.node"
   ],
   "description": "nodejs binding",
   "keywords": [

@@ -7,9 +7,9 @@
   "cpu": [
     "x64"
   ],
-  "main": ".freebsd-x64.node",
+  "main": "FSRS.freebsd-x64.node",
   "files": [
-    ".freebsd-x64.node"
+    "FSRS.freebsd-x64.node"
   ],
   "description": "nodejs binding",
   "keywords": [

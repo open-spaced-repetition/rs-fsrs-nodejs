@@ -63,7 +63,7 @@ switch (platform) {
     switch (arch) {
       case 'x64':
         localFileExisted = existsSync(
-          join(__dirname, '.win32-x64-msvc.node')
+          join(__dirname, 'FSRS.win32-x64-msvc.node')
         )
         try {
           if (localFileExisted) {

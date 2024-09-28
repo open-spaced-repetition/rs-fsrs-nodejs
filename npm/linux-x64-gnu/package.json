@@ -7,9 +7,9 @@
   "cpu": [
     "x64"
   ],
-  "main": ".linux-x64-gnu.node",
+  "main": "FSRS.linux-x64-gnu.node",
   "files": [
-    ".linux-x64-gnu.node"
+    "FSRS.linux-x64-gnu.node"
   ],
   "description": "nodejs binding",
   "keywords": [

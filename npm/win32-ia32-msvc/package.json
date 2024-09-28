@@ -7,9 +7,9 @@
   "cpu": [
     "ia32"
   ],
-  "main": ".win32-ia32-msvc.node",
+  "main": "FSRS.win32-ia32-msvc.node",
   "files": [
-    ".win32-ia32-msvc.node"
+    "FSRS.win32-ia32-msvc.node"
   ],
   "description": "nodejs binding",
   "keywords": [
