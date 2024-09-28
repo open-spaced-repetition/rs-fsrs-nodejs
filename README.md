@@ -1,3 +1,18 @@
+# rs-fsrs-nodejs
+
+Nodejs binding for rs-fsrs.
+
+---
+
+## Example
+
+```
+npm run build
+node simple-test.mjs
+```
+
+---
+
 # `@napi-rs/package-template`
 
 ![https://github.com/napi-rs/package-template/actions](https://github.com/napi-rs/package-template/workflows/CI/badge.svg)

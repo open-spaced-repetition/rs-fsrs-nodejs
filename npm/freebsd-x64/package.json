@@ -1,5 +1,5 @@
 {
-  "name": "@napi-rs/package-template-freebsd-x64",
+  "name": "rs-fsrs-nodejs-freebsd-x64",
   "version": "1.0.0",
   "os": [
     "freebsd"
@@ -7,11 +7,11 @@
   "cpu": [
     "x64"
   ],
-  "main": "package-template.freebsd-x64.node",
+  "main": ".freebsd-x64.node",
   "files": [
-    "package-template.freebsd-x64.node"
+    ".freebsd-x64.node"
   ],
-  "description": "Template project for writing node package with napi-rs",
+  "description": "nodejs binding",
   "keywords": [
     "napi-rs",
     "NAPI",

@@ -10,8 +10,10 @@ version = "0.1.0"
 crate-type = ["cdylib"]
 
 [dependencies]
-napi        = "2"
+napi        = {version = "2",features = ["chrono_date"]}
 napi-derive = "2"
+fsrs = { git = "https://github.com/open-spaced-repetition/rs-fsrs" }
+chrono = {version = "0.4.38"}
 
 [build-dependencies]
 napi-build = "2"

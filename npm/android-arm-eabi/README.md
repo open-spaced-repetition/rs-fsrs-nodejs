@@ -1,3 +1,3 @@
-# `@napi-rs/package-template-android-arm-eabi`
+# `rs-fsrs-nodejs-android-arm-eabi`
 
-This is the **armv7-linux-androideabi** binary for `@napi-rs/package-template`
+This is the **armv7-linux-androideabi** binary for `rs-fsrs-nodejs`
