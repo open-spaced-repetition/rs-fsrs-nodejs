@@ -12,7 +12,7 @@ crate-type = ["cdylib"]
 [dependencies]
 napi        = {version = "2",features = ["chrono_date"]}
 napi-derive = "2"
-fsrs = { git = "https://github.com/open-spaced-repetition/rs-fsrs" }
+fsrs = { git = "https://github.com/open-spaced-repetition/rs-fsrs", rev = "1bdd482" }
 chrono = {version = "0.4.38"}
 
 [build-dependencies]
